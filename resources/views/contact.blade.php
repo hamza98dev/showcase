@@ -9,12 +9,23 @@
                 <h1 id="title">Via Mail</h1>
                 <h3 class="mt-4">Contactez:  <span id="title"> <i class="fa fa-mail" aria-hidden="true"></i> LoremIpsum@gmail.com</span> </h3>
 <hr>
-                <h1 id="title" class="mt-3">Via Telephone</h1>
-                <h3 class="mt-4">Apellez le :  <span id="title"> <i class="fa fa-phone" aria-hidden="true"></i> +212661353636</span> </h3>
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea placeholder="Enter Message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+   
+    <button type="submit" class="btn btn-success btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i> Envoyer</button>
+  </form>
             </div>
             <div class="col-md-6" data-aos="fade-left"  data-aos-duration="500">
-              
- <example-component></example-component>
+                <h1 id="title" >Via Telephone</h1>
+                <h3 class="mt-4">Apellez le :  <span id="title"> <i class="fa fa-phone" aria-hidden="true"></i> +212661353636</span> </h3>
+                
                
                
             </div>

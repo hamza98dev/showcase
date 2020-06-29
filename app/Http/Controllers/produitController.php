@@ -24,6 +24,7 @@ class produitController extends Controller
      */
     public function create()
     {
+        $data=[];
         $data = produit::with('images')->get();
 
     return view('welcome',['data'=>$data]);
