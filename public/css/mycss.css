@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://cdn.eventfinda.co.nz/uploads/events/transformed/1413316-622184-34.jpg?v=13');
+    background-size: cover;
+
+}
+
+.underhero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+}
+
+.shadows h1 {
+    font-weight: 600;
+    font-size: 11.5vw;
+    opacity: 0.1;
+    letter-spacing: 90px;
+    margin-left: 10px;
+    color: grey;
+    z-index: 0;
+}
+
+.shadows {
+    position: absolute;
+    bottom: 0;
+    font-size: 15vw;
+}
+
+#title {
+    font-weight: 600;
+
+}
+
+.stylebuttons {
+    border: 1px solid black;
+    border-radius: 0px;
+    color: black;
+    background-color: white;
+    padding: 10px 60px;
+    transition: all 0.5s ease-in-out;
+}
+
+.stylebuttons:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0px 20px 48px grey;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.heroContact {
+    width: 100%;
+    height: 50vh;
+    background-image: url('https://images.unsplash.com/photo-1560797001-bfcf85c33a3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1293&q=80');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroContact h1 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 6vw;
+
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#stock {
+    color: green;
+    font-weight: bold;
+}
+
+#outstock {
+    color: red;
+    font-weight: bold;
+
+}
+
+.heroapropos {
+    width: 100%;
+    height: 50vh;
+    background-image: url('https://images.unsplash.com/photo-1560797001-bfcf85c33a3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1293&q=80');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroapropos h1 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 6vw;
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 853px) {
+    .underhero {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .shadows h1 {
+        letter-spacing: 30px;
+    }
+}
+
+.card {
+    border-radius: 8px;
+
+}
+
+.card-img-top {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 400px !important;
+}
