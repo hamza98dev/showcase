@@ -14,8 +14,9 @@
             <h1  style="font-weight: 600;color: forestgreen;font-size: 40px">TROBEL <span style="color: black;font-size: 20px;font-weight: 200">maroc</span> </h1>
             <hr>
 
-                </p>
                 <div class="cotainer">
+                    <h4 class="text-center my-2">Nos Services</h4>
+
                     <div class="row">
                         <div class="col-md-4 col-xs-12">
                             <div class="card my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00" >

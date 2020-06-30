@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\produit;
 use App\produitimage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use DB;
 
 class adminController extends Controller
@@ -41,6 +42,7 @@ class adminController extends Controller
         $prod->titre=$request->input('titre');
         $prod->description=$request->input('description');
         $prod->prix=$request->input('prix');
+        $prod->slug=Str::slug($request->input('titre'), '-');
         $prod->stock=$request->input('quantite');
         $prod->save();
         $files = $request->file('attachment');

@@ -70,7 +70,7 @@
                                 <p id="outstock">Epuise</p>
                             @endif
 
-                            <a href="{{url('/p/'.$item->id)}}" class="btn btn-primary"><i class="fa fa-eye mx-2" aria-hidden="true"></i>Voir</a>
+                            <a href="{{url('/p/'.$item->id.'/'.$item->slug)}}" class="btn btn-primary"><i class="fa fa-eye mx-2" aria-hidden="true"></i>Voir</a>
 
                         </div>
                     </div>

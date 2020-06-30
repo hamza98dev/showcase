@@ -48,7 +48,7 @@ class produitController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id,$slug)
     {
         $data=produit::with('images')->where('id',$id)->get();
         $random=produit::with('images')->limit(3)->inRandomOrder()->get();

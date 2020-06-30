@@ -24,7 +24,7 @@ Route::get('/Apropos', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/p/{id}', 'produitController@show');
+Route::get('/p/{id}/{slug}', 'produitController@show');
 
 Route::post('/postmachine','adminController@store');
 Route::delete('/deletemachine/{id}','adminController@destroy');
