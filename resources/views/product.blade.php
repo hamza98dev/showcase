@@ -1,8 +1,13 @@
 @extends('layouts.app')
+@section('seo')
+<title>
+  {{$data[0]->titre}}  
+</title>
+<meta name="description" content="{{$data[0]->description}}">
+@endsection
 @section('content')
     <div class="container mt-5">
         <div class="row">
-
             @foreach($data as $item)
                 <div class="col-md-6 col-sm-12" data-aos="fade-right"  data-aos-duration="500">
 
@@ -11,7 +16,7 @@
                         <div class="carousel-inner">
                             @foreach($item->images as $key => $photo)
                                 <div class="carousel-item {{$key == 0 ? 'active' : '' }}">
-                                    <img src="{{url('/storage/'. $photo->path)}}" class="d-block w-100 mh-75"  alt="...">
+                                    <img src="{{url('/storage/'. $photo->path)}}" class="d-block w-100 mh-75"  alt="{{$item->titre}}">
                                 </div>
                             @endforeach
                         </div>
@@ -56,7 +61,7 @@
             @foreach($random as $item)
                 <div class="col-md-4 col-sm-12" data-aos="fade-up"  data-aos-duration="1000">
                     <div class="card my-2">
-                        <img src="{{asset('storage/'.$item->images[0]->path)}}" class="card-img-top" alt="...">
+                        <img src="{{asset('storage/'.$item->images[0]->path)}}" class="card-img-top" alt="{{$item->titre}} ">
                         <div class="card-body">
                             <h5 class="card-title">{{$item->titre}} </h5>
                             @if($item->stock >0)

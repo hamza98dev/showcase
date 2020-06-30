@@ -12,7 +12,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>TROBEL MAROC</title>
+    @yield('seo')
+   
 
 
     <!-- Fonts -->

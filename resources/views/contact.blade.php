@@ -1,4 +1,10 @@
 @extends('layouts.app')
+@section('seo')
+<title>
+  Contact Trobel Maroc
+</title>
+<meta name="description" content="Contactez TROBEL MAROC">
+@endsection
 @section('content')
     <div class="heroContact">
         <h1>Contact Us</h1>

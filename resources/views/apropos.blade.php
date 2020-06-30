@@ -1,4 +1,10 @@
 @extends('layouts.app')
+@section('seo')
+<title>
+  Apropos Trobel Maroc
+</title>
+<meta name="description" content="A propos de  TROBEL MAROC">
+@endsection
 @section('content')
     <div class="heroapropos">
         <h1>About Us</h1>
@@ -7,10 +13,42 @@
         <div class="m-5" data-aos="fade-up"  data-aos-duration="500">
             <h1  style="font-weight: 600;color: forestgreen;font-size: 40px">TROBEL <span style="color: black;font-size: 20px;font-weight: 200">maroc</span> </h1>
             <hr>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci consectetur culpa doloremque eum facere fuga in inventore iure nam omnis perspiciatis quae qui quod repellat reprehenderit, sunt, voluptatibus voluptatum.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dicta dolor dolore, dolorum eligendi et illo inventore, labore laborum magnam necessitatibus, placeat quod suscipit temporibus veniam! Eius illo magni unde.q
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid amet aperiam dolorem doloremque facere id, laboriosam mollitia nostrum odio officiis, optio pariatur quae quam quo recusandae repellendus unde vel?
+
                 </p>
+                <div class="cotainer">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00" >
+  <div class="card-body">
+    <div class="holder"><img src="{{asset('icons/sell.svg')}}" alt=""></div>
+
+    <h5 class="card-title text-center my-2">Vente</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
+  <div class="card-body">
+    <div class="holder"><img src="{{asset('icons/fix.svg')}}" alt=""></div>
+
+    <h5 class="card-title text-center mt-2">Reparation</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" >
+  <div class="card-body">
+    <div class="holder"><img src="{{asset('icons/tracking.svg')}}" alt=""></div>
+
+    <h5 class="card-title text-center my-2">Livraison</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 @endsection
