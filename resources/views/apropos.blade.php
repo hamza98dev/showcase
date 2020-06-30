@@ -18,9 +18,9 @@
                 <div class="cotainer">
                     <div class="row">
                         <div class="col-md-4 col-xs-12">
-                            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00" >
+                            <div class="card my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00" >
   <div class="card-body">
-    <div class="holder"><img src="{{asset('icons/sell.svg')}}" alt=""></div>
+    <div class="holder"><img src="{{asset('icons/bestseller.svg')}}" alt=""></div>
 
     <h5 class="card-title text-center my-2">Vente</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -28,7 +28,7 @@
 </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
-                            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
+                            <div class="card my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
   <div class="card-body">
     <div class="holder"><img src="{{asset('icons/fix.svg')}}" alt=""></div>
 
@@ -38,7 +38,7 @@
 </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
-                            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" >
+                            <div class="card my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" >
   <div class="card-body">
     <div class="holder"><img src="{{asset('icons/tracking.svg')}}" alt=""></div>
 

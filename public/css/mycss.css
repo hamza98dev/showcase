@@ -95,11 +95,14 @@
 #stock {
     color: green;
     font-weight: bold;
+    font-size: 13px;
 }
 
 #outstock {
     color: red;
     font-weight: bold;
+    font-size: 13px;
+
 
 }
 
@@ -172,5 +175,3 @@
     height: 90px;
     transition: all 1s ease-in-out;
 }
-
-
